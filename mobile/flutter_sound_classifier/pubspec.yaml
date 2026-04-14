@@ -1,0 +1,27 @@
+name: sound_classifier_app
+description: Prototype app for local environmental sound classification.
+publish_to: "none"
+
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  record: ^6.2.0
+  onnxruntime: ^1.4.1
+  fftea: ^1.5.0
+  audioplayers: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/best_model.onnx
+    - assets/labels.txt
